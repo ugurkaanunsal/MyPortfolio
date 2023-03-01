@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Condensed:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: f4f4f4;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.testimonial-container{
+    background-color: #476ce4;
+    color:#fff;
+    border-radius: 15px;
+    margin: 20px auto;
+    padding: 50px 80px;
+    max-width: 768px;
+    position: relative;
+    
+}
+
+.fa-quote{
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 29px;
+    position:absolute;
+    top: 70px;
+}
+.testimonial{
+    line-height: 28px;
+    text-align: justify;
+}
+
+.fa-quote-left{
+    left: 40px;
+}
+.fa-quote-right{
+    right: 50px;
+}
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user .user-image{
+    border-radius: 50%;
+    height: 95px;
+    object-fit: cover;
+
+}
+
+.user .user-details{
+    margin-left: 15px;
+}
+
+.user .role{
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+.progress-bar{
+    background-color: #fff;
+    height: 4px ;
+    width: 100%;
+    animation: grow 5s linear infinite;
+    transform-origin: left;
+}
+@keyframes grow {
+    0%{
+        transform: scaleX(0);
+    }
+    
+}
+
+@media(max-width:768px){
+    .testimonial-container{
+        padding: 20px 30px;
+    }
+    .fa-quote{
+        display: none;
+    }
+}
