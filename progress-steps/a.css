@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Condensed:wght@300&display=swap');
+
+:root{
+    --line-border-fill:#ED213A;
+    --line-border-empty:#d3b997;
+
+}
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "poppins", sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #F2994A;   
+    background: linear-gradient(to right, #F2C94C, #F2994A); 
+     overflow: hidden;
+}
+
+.container{
+    text-align: center;
+}
+
+.progress-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 100%;
+    width: 350px;
+}
+
+.progress-container::before{
+    content: '';
+    background-color: var(--line-border-empty);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform:translateY(-50%);
+    height: 4px;
+    width: 100%;
+    z-index: -1;
+   
+}
+
+.progress{
+    background-color: var(--line-border-fill);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform:translateY(-50%);
+    height: 4px;
+    width: 0%;
+    z-index: -1;
+   transition: 0.4s ease;
+}
+
+.circle{
+    background-color: rgb(131, 48, 48);
+    color:rgb(255, 255, 255);
+    border-radius:50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--line-border-empty);
+    transition: .1s ease-in-out;
+     
+
+}
+
+.circle.active{
+    border-color: var(--line-border-fill);
+     
+}
+
+.btn{
+    background-color: var(--line-border-fill);
+    color:#fff;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: large;
+    font-family: "poppins", sans-serif;
+    padding: 8px  36px;
+    margin: 5px;
+    
+}
+.btn:active{
+    transform: scale(0.95);
+}
+
+.btn:focus{
+    outline:0;
+}
+
+.btn:hover{
+    background-color: rgb(131, 48, 48);;
+}
+
+.btn:disabled{
+    background-color: var(--line-border-empty);
+    cursor: not-allowed;
+}
