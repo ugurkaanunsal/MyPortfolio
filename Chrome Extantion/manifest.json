@@ -1,0 +1,17 @@
+{
+  "name": "Uğur Kaan Ünsal",
+  "description": "Güzel oldu ",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "16a.png",
+    
+    "48": "48a.png",
+    "128": "or.png"
+  },
+
+  "action": {
+    "default_icon": "or.png",
+    "default_popup": "popup.html"
+  }
+}
