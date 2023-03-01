@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Footwear</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+        
+    </head>
+    <body>
+        <a href="#" class="hamburger">
+            <i class="fas fa-bars"></i>
+        </a>
+
+        <a href="#" class="phone"><i class="fas fa-phone"></i></a>
+
+        <div class="logo">
+            <svg style="color: white" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Nike</title><path d="M24 7.8L6.442 15.276c-1.456.616-2.679.925-3.668.925-1.12 0-1.933-.392-2.437-1.177-.317-.504-.41-1.143-.28-1.918.13-.775.476-1.6 1.036-2.478.467-.71 1.232-1.643 2.297-2.8a6.122 6.122 0 00-.784 1.848c-.28 1.195-.028 2.072.756 2.632.373.261.886.392 1.54.392.522 0 1.11-.084 1.764-.252L24 7.8z" fill="white"></path></svg>
+      </div>
+        <p>JUST DO IT. </p>
+
+        <div class="carousel-container">
+            <div class="carousel" id="carousel">
+                <div class="slide" data-bg="cb021c">
+                    <img src="shoe-1.jpg" alt="shoe-1"/>
+                    <h1>Performance</h1>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="slide" data-bg="b3e041">
+                    <img src="usama-akram-kP6knT7tjn4-unsplash.jpg" alt="shoe-2" />
+                    <h1>Design</h1>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="slide" data-bg="85bee1">
+                    <img src="usama-akram-s-gYAbQToXk-unsplash.jpg" alt="shoe-3" />
+                    <h1>Confort</h1>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="slide" data-bg="cb021c">
+                    <img src="shoe-1.jpg" alt="shoe-4" />
+                    <h1>Lightness</h1>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+
+            <button id="left" class="left-arrow arrow">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button id="right" class="right-arrow arrow">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <div class="progress"></div>
+        </div>
+    </body>
+</html>
